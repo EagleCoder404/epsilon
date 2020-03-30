@@ -5,7 +5,7 @@ function getCon()
 {
   $username = "id12988428_root";
   $password = "longpassword";
-  $hostname = "localhost";
+  $hostname = "https://databases-auth.000webhost.com/";
   $db = "id12988428_maindb";
 
   $con = new mysqli($hostname,$username,$password,$db);
