@@ -74,7 +74,7 @@ function db()
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 EOD;
   if($con->query($sql))
-    echo "done"
+    echo "done";
   else {
     echo $con->error;
   }
