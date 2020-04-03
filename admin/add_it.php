@@ -25,6 +25,7 @@ if($con->query($sql)===True)
 else
     echo $con->error."<br>";
 echo "<br>$imageFileType<br>";
+echo is_writable('../data');
     if (move_uploaded_file($_FILES["image"]["tmp_name"], "../data/"."$num.".$imageFileType)) {
         echo "The file ". basename( $_FILES["image"]["name"]). " has been uploaded.";
     } else {
