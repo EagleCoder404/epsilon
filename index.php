@@ -147,17 +147,8 @@
 
       </div>
 
-
-      <div class="container-fluid text-center bg-dark fixed-bottom text-light p-3">
-
-
-          Made with <span styke="color:red">&hearts;</span> by
-
-
-        <kbd> TEAM 12</kbd>
-
-
-      </div>
+<br><br>
+     
 
         <div class="text-center">
         <h4>For queries:</h4>
@@ -174,7 +165,16 @@
         
 
     <br><br>
+ <div class="container-fluid text-center bg-dark fixed-bottom text-light p-3">
 
+
+          Made with <span styke="color:red">&hearts;</span> by
+
+
+        <kbd> TEAM 12</kbd>
+
+
+      </div>
 
 </body>
 
