@@ -6,7 +6,10 @@ $con = getCon();
 $target_dir = "upl/";
 var_dump($_FILES);
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+//$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$imageFileType ="png";
+
+
 $res = $con->query('select max(number) as n from quiz;')->fetch_assoc();
 if($res['n']==NULL)
     $num=1;
