@@ -7,16 +7,14 @@
 function getCon()
 
 {
+  $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
- $username = "id13132979_root";
+  $server = $url["host"];
+  $username = $url["user"];
+  $password = $url["pass"];
+  $db = substr($url["path"], 1);
 
- $password = "e63-P?P=oQWU@zLo";
-
- $hostname = "localhost";
-
- $db = "id13132979_maindb";
-
- $con = new mysqli($hostname,$username,$password,$db);
+  $con = new mysqli($server, $username, $password, $db);
 
  if($con->connect_error)
 
