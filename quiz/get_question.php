@@ -40,7 +40,7 @@ function give($num)
    $file="";
     $q = $con->query("select question from quiz where number='$num'")->fetch_assoc()['question'];
     foreach(['.jpg'] as $ext)
-        if(file_exists("../data/"."$num".$ext))
+        if(file_exists("../assets/"."$num".$ext))
         {
             $file="/assets/".$num.$ext;
             break;
