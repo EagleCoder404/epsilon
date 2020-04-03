@@ -6,12 +6,11 @@
 
 function getCon()
 {
-  $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-  var_dump($url);
-  $server = "us-cdbr-east.cleardb.com";
-  $username ="b18ed02334ae81";
-  $password ="b2ad5b44";
-  $db = "heroku_29c07e9512929cd";
+  $url = parse_url(
+  $server = $url["host"];
+  $username = $url["user"];
+  $password = $url["pass"];
+  $db = substr($url["path"], 1);
 
   $con = new mysqli($server, $username, $password, $db);
 
