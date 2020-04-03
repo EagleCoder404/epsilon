@@ -4,7 +4,7 @@ $q = $_POST['question_name'];
 $a = $_POST['answer'];
 $con = getCon();
 $target_dir = "upl/";
-var_dump($_FILES);
+
 $target_file = $target_dir . basename($_FILES["image"]["name"]);
 //$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 $imageFileType ="png";
