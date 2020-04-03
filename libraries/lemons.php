@@ -11,7 +11,7 @@ function getCon()
   $server = "us-cdbr-east.cleardb.com";
   $username ="b18ed02334ae81";
   $password ="b2ad5b44";
-  $db = "heroku_29c07e9512929cd"
+  $db = "heroku_29c07e9512929cd";
 
   $con = new mysqli($server, $username, $password, $db);
 
