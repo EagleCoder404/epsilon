@@ -63,6 +63,22 @@ function rowExists($table,$search_param,$search_value)
 
 }
 
-getCon();
+function db()
+{
+  $con = getCon();
+  $sql =<<<EOD
+  CREATE TABLE `quiz` (
+    `number` int(11) NOT NULL,
+    `question` text COLLATE utf8_unicode_ci NOT NULL,
+    `answer` text COLLATE utf8_unicode_ci NOT NULL
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+EOD;
+  if($con->query($sql))
+    echo "done"
+  else {
+    echo $con->error;
+  }
+}
+db();
 
 ?>
