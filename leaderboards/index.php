@@ -5,7 +5,7 @@
 
     $con = getCon();
 
-    $res = $con->query("select * from user");
+    $res = $con->query("select * from user order by id");
 
     $points=[];
 
@@ -17,7 +17,7 @@
 
     {
 
-        
+
 
         $points[] =$row['points'];
 
@@ -63,7 +63,7 @@
 
           Epsilon
 
-        </a> 
+        </a>
 
 
      </nav>-->
@@ -113,4 +113,3 @@
 </body>
 
 </html>
-
