@@ -166,40 +166,40 @@ function db()
 //   else {
 //     echo $con->error;
 //   }
-
-  $sql =<<<EOD
-  ALTER TABLE `matches`
-    ADD PRIMARY KEY (`user_name`,`quiz_no`);
-
-EOD;
-  if($con->query($sql))
-    echo "done";
-  else {
-    echo $con->error;
-  }
-
-  $sql =<<<EOD
-  ALTER TABLE `quiz`
-    ADD PRIMARY KEY (`number`);
-EOD;
-  if($con->query($sql))
-    echo "done";
-  else {
-    echo $con->error;
-  }
-
-  $sql =<<<EOD
-  ALTER TABLE `user`
-    ADD PRIMARY KEY (`user_name`),
-    ADD UNIQUE KEY `email` (`email`);
-  COMMIT;
-EOD;
-  if($con->query($sql))
-    echo "done";
-  else {
-    echo $con->error;
-  }
+//
+//   $sql =<<<EOD
+//   ALTER TABLE `matches`
+//     ADD PRIMARY KEY (`user_name`,`quiz_no`);
+//
+// EOD;
+//   if($con->query($sql))
+//     echo "done";
+//   else {
+//     echo $con->error;
+//   }
+//
+//   $sql =<<<EOD
+//   ALTER TABLE `quiz`
+//     ADD PRIMARY KEY (`number`);
+// EOD;
+//   if($con->query($sql))
+//     echo "done";
+//   else {
+//     echo $con->error;
+//   }
+//
+//   $sql =<<<EOD
+//   ALTER TABLE `user`
+//     ADD PRIMARY KEY (`user_name`),
+//     ADD UNIQUE KEY `email` (`email`);
+//   COMMIT;
+// EOD;
+//   if($con->query($sql))
+//     echo "done";
+//   else {
+//     echo $con->error;
+//   }
 }
-db();
+// db();
 
 ?>
