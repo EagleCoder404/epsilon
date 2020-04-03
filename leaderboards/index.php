@@ -1,5 +1,4 @@
 
-<?php include "./header.php";?>
 <?php
 
     include "../libraries/lemons.php";
@@ -58,15 +57,14 @@
 
 
 
-     <!-- <nav class="navbar navbar-expand-sm  justify-content-center bg-dark navbar-dark">
+     <nav class="navbar navbar-expand-sm  justify-content-center bg-dark navbar-dark">
 
          <a href="/" class='navbar-brand'>
 
           Epsilon
 
-        </a> -->
+        </a> 
 
- <?=$code?>
 
      </nav>
 
