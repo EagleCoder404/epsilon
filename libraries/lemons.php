@@ -17,7 +17,7 @@ function getCon()
 
  if($con->connect_error)
 
- die(connect_error);
+ die($con->connect_error);
 
  return $con;
 
