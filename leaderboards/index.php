@@ -1,4 +1,4 @@
-
+<?php include "../header.php";?>
 <?php
 
     include "../libraries/lemons.php";
@@ -56,8 +56,8 @@
   <body>
 
 
-
-     <nav class="navbar navbar-expand-sm  justify-content-center bg-dark navbar-dark">
+    <?= $code?>
+     <!--<nav class="navbar navbar-expand-sm  justify-content-center bg-dark navbar-dark">
 
          <a href="/" class='navbar-brand'>
 
@@ -66,7 +66,7 @@
         </a> 
 
 
-     </nav>
+     </nav>-->
 
     <div class='jumbotron text-center'>
 
