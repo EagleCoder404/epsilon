@@ -5,7 +5,6 @@
 //make functions
 
 function getCon()
-
 {
   $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
@@ -25,7 +24,6 @@ function getCon()
 }
 
 function create_session($user_name)
-
 {
 
  session_start();
@@ -35,7 +33,6 @@ function create_session($user_name)
 }
 
 function go_to($path)
-
 {
 
  header("Location:".$path);
