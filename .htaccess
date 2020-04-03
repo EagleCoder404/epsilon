@@ -1,0 +1,9 @@
+
+# HTID:13186752: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:13186752:
+php_flag output_buffering on 
+<Files "header.php">  
+  Order Allow,Deny
+  Deny from all
+</Files>

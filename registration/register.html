@@ -1,162 +1,1 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-
-  <body>
-
-      <nav class="navbar navbar-expand-sm  justify-content-center bg-dark navbar-dark">
-         <a href="/" class='navbar-brand'>
-          Epsilon
-        </a> 
- 
-     </nav>
-     <div class="container bg-light p-3 mt-3 justify-content-center">
-
-     <form id='main' action="index.html" method="post">
-       <div class="row">
-         <div class="form-group col">
-           <label>Email</label>
-           <input type="email" class='form-control' id='e' name="email"  required>
-         </div>
-         <div class="form-group col">
-           <label>Username</label>
-           <input type="text" class='form-control' id='u' name="user_name"  required>
-         </div>
-        </div>
-        <div class="row">
-
-       <div class="form-group col">
-         <label>password</label>
-         <input type="password" class='form-control' id='pass' name="password"  required>
-       </div>
-       <div class="form-group col">
-         <label>Re-Enter password</label>
-         <input type="password" class='form-control' id='pass2' name="password2"  required>
-       </div>
-     </div>
-            <div class="container border border-danger error mt-3 mb-3">
-
-       </div>
-       <div class="container border border-danger error1 mt-3 mb-3">
-
-       </div>
-           <div class="container border border-danger error2 mt-3 mb-3">
-
-       </div>
-       <div class="container mt-3">
-         <button id='sub' class='btn btn-primary' type="submit" name="button">Submit</button>
-       </div>
-     </form>
-   </div>
-
-   <script type="text/javascript">
-
-      $('.error1').hide();
-      $('.error').hide();
-      ve=1;
-      vu=1;
-      vp=1;
-$('.error2').hide()
-      user_name = $('#u')
-      email = $('#e')
-      pass = $('#pass')
-      rpass = $('#pass2')
-
-     $('#pass2').focusout(function(){
-       if(!(pass.val() === rpass.val()))
-       {
-         $('.error').show()
-         $('.error').html('Passwords does not match')
-         vp=0;
-       }
-       else {
-           vp=1
-         $('.error').hide()
-       }
-     })
-    $('#u').focusout(function(e)
-    {
-               $.ajax({
-         url:'user_exists.php',
-         method:'POST',
-         data:{user_name:user_name.val()},
-         success:function(response){
-           console.log(response)
-                if(response=='yes')
-                {
-                    $('.error2').show();
-                    $('.error2').html('Username Exists')
-                    vu=0
-                }
-                else
-                {
-                    $(".error2").hide();vu=1}
-         },
-         error:function(x,y,z){
-           console.log(x+y+z);
-         }
-       })
-    })
-        $('#e').focusout(function(e)
-    {
-               $.ajax({
-         url:'email_exists.php',
-         method:'POST',
-         data:{email:email.val()},
-         success:function(response){
-           console.log(response)
-                if(response=='yes')
-                {
-                    $('.error1').show();
-                    $('.error1').html('Email Exists')
-                    ve=0
-                }
-                else{
-                    $('.error1').hide();ve=1}
-                
-         },
-         error:function(x,y,z){
-           console.log(x+y+z);
-         }
-       })
-    })
-    
-     $('#main').submit(function(e)
-     {
-       e.preventDefault();
-       $.ajax({
-         url:'register.php',
-         method:'POST',
-         data:{user_name:user_name.val(),email:email.val(),pass:pass.val()},
-         success:function(response){
-             if(vu==0 || ve==0 || vp==0)
-            {
-                alert("Be reasonable");
-                return;
-            }
-           console.log(response)
-           if(response!=='yes')
-           {
-           $('.error').show()
-           $('.error').html(response)
-           }
-           else
-           window.location.href="../login"
-         },
-         error:function(x,y,z){
-           console.log(x+y+z);
-         }
-       })
-     })
-
-
-   </script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en" dir="ltr">  <head>    <meta charset="utf-8">    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>    <meta name="viewport" content="width=device-width, initial-scale=1">  </head>  <body>      <nav class="navbar navbar-expand-sm  justify-content-center bg-dark navbar-dark">         <a href="/" class='navbar-brand'>          Epsilon        </a>       </nav>     <div class="container bg-light p-3 mt-3 justify-content-center">     <form id='main' action="index.html" method="post">       <div class="row">         <div class="form-group col">           <label>Email</label>           <input type="email" class='form-control' id='e' name="email"  required>         </div>         <div class="form-group col">           <label>Username</label>           <input type="text" class='form-control' id='u' name="user_name"  required>         </div>        </div>        <div class="row">       <div class="form-group col">         <label>password</label>         <input type="password" class='form-control' id='pass' name="password"  required>       </div>       <div class="form-group col">         <label>Re-Enter password</label>         <input type="password" class='form-control' id='pass2' name="password2"  required>       </div>     </div>            <div class="container border border-danger error mt-3 mb-3">       </div>       <div class="container border border-danger error1 mt-3 mb-3">       </div>           <div class="container border border-danger error2 mt-3 mb-3">       </div>       <div class="container mt-3">         <button id='sub' class='btn btn-primary' type="submit" name="button">Submit</button>       </div>     </form>   </div>   <script type="text/javascript">      $('.error1').hide();      $('.error').hide();      ve=1;      vu=1;      vp=1;$('.error2').hide()      user_name = $('#u')      email = $('#e')      pass = $('#pass')      rpass = $('#pass2')     $('#pass2').focusout(function(){       if(!(pass.val() === rpass.val()))       {         $('.error').show()         $('.error').html('Passwords does not match')         vp=0;       }       else {           vp=1         $('.error').hide()       }     })    $('#u').focusout(function(e)    {               $.ajax({         url:'user_exists.php',         method:'POST',         data:{user_name:user_name.val()},         success:function(response){response = response.trim()           console.log(response)                if(response=='yes')                {                    $('.error2').show();                    $('.error2').html('Username Exists')                    vu=0                }                else                {                    $(".error2").hide();vu=1}         },         error:function(x,y,z){           console.log(x+y+z);         }       })    })        $('#e').focusout(function(e)    {               $.ajax({         url:'email_exists.php',         method:'POST',         data:{email:email.val()},         success:function(response){    response = response.trim()           console.log(response)                if(response=='yes')                {                    $('.error1').show();                    $('.error1').html('Email Exists')                    ve=0                }                else{                    $('.error1').hide();ve=1}                         },         error:function(x,y,z){           console.log(x+y+z);         }       })    })         $('#main').submit(function(e)     {       e.preventDefault();       $.ajax({         url:'register.php',         method:'POST',         data:{user_name:user_name.val(),email:email.val(),pass:pass.val()},         success:function(response){             response = response.trim()             if(vu==0 || ve==0 || vp==0)            {                alert("Be reasonable");                return;            }           console.log(response)           if(response!=='yes')           {           $('.error').show()           $('.error').html(response)           }           else           window.location.href="../login"         },         error:function(x,y,z){           console.log(x+y+z);         }       })     })   </script></body></html>
