@@ -11,7 +11,7 @@ function getQuestionNumbers()
     while($num = $res->fetch_assoc())
         $nums[] = $num['number'];
     return $nums;
-    
+
 }
 
 function getAllotedQuestions($user)
@@ -47,7 +47,7 @@ function give($num)
         }
     $r = json_encode(["n"=>$num,"q"=>$q,"f"=>$file]);
     echo $r;
-    
+
 }
 
 function write_to_db($number)
@@ -57,7 +57,7 @@ function write_to_db($number)
      $cur = date("Y-m-d H:i:s");
     $con->query("insert into matches(user_name,quiz_no,status,start) values('$user','$number','0','$cur')");
     // echo $con->error;
-    
+
 }
 function get_last()
 {
