@@ -159,6 +159,19 @@
 
       </div>
 
+        <div class="text-center">
+        <h4>For queries:</h4>
+        <h6>Manoj: +91 99807 12884</h6>
+        <h6>Harshita: +91 91138 38314</h6>
+        <h6>Sunkeerth: +91 86608 28013</h6>
+        <br>
+        <h4>shoot a mail to:</h4>
+        
+        <h6>harshithar799@gmail.com</h6>
+        <h6>manojkumar333619@gmail.com</h6>
+        <h6>sunkeerthmuppala@gmail.com</h6>
+    </div>
+        
 
     <br><br>
 
