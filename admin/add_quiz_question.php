@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 function add()
 {
     $html="<form action='add_it.php' method='POST' enctype='multipart/form-data'>
         <input type='text' name='question_name' placeholder='question'/>
-        <input type='file' name='image'/>
+        
         <input type='text' name='answer' placeholder='answer'/>
         <button type='submit'>submit</button>
     </form>";
