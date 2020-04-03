@@ -48,7 +48,9 @@
 
       <div class="jumbotron text-center">
 
-
+        <div class="text-center">
+          <img src="https://i.ibb.co/xM0Lt5j/ieeelogo.png" class="img-thumbnail" alt="ieeeuvce">
+        </div>
           <h1 class="display-1">Epsilon</h1>
 
 
