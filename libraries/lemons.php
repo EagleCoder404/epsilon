@@ -6,7 +6,7 @@
 
 function getCon()
 {
-  $url = parse_url(
+  $url = parse_url("mysql://b18ed02334ae81:b2ad5b44@us-cdbr-iron-east-01.cleardb.net/heroku_29c07e9512929cd?reconnect=true");
   $server = $url["host"];
   $username = $url["user"];
   $password = $url["pass"];
@@ -15,7 +15,6 @@ function getCon()
   $con = new mysqli($server, $username, $password, $db);
 
  if($con->connect_error)
-
  die($con->connect_error);
 
  return $con;
