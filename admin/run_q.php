@@ -5,6 +5,8 @@ $sql=<<<EOD
   delete from user;
 
 EOD;
-$con->query($sql);
+if($con->query($sql))
+echo "done";
+else
 echo $con->error;
  ?>
