@@ -1,5 +1,5 @@
 <?php
-include "../libraries/lemons.php"
+include "../libraries/lemons.php";
 $con = getCon();
 $sql=<<<EOD
   delete from user;
