@@ -131,6 +131,8 @@ if(!isset($_SESSION['user_name']))
 				})
 			}
 			$("#submitF").submit(function(e) {
+        $("#sub").attr("disabled",true);
+
 				e.preventDefault();
 				$.ajax({
 					url: "check_answer.php",
@@ -141,6 +143,7 @@ if(!isset($_SESSION['user_name']))
 					},
 					success: function(res) {
 						res = res.trim();
+            $('#sub').attr("disabled",false);
 						if(res == "yes") {
 							$("#result").html("CORRECT!");
 							$("#result").removeClass("bg-danger");
