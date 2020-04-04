@@ -66,13 +66,13 @@
           <br>
 
 
-          
 
 
-          
 
 
-          
+
+
+
 
 
           <!--trying-->
@@ -113,10 +113,10 @@
             <li>Questions might be added based on the requirement.</li>
             <li>Organisers decision is final.</li>
             <li>Please use your official name while registering to claim the goodies in case you win. </li>
-            <li>The questions range over the theme of the fest. Few questions might tickle your brain, but do not give up!</li> 
-                            
+            <li>The questions range over the theme of the fest. Few questions might tickle your brain, but do not give up!</li>
 
-                 </ul>  
+
+                 </ul>
 
 
       </div>
@@ -131,10 +131,10 @@
 </div><br><br>
 
 
-          
 
 
-          
+
+
 
 
         <!--get started-->
@@ -149,7 +149,7 @@
       </div>
 
 <br><br>
-     
+
 
         <div class="text-center">
         <h4>For queries:</h4>
@@ -158,18 +158,18 @@
         <h6>Sunkeerth: +91 86608 28013</h6>
         <br>
         <h4>shoot a mail to:</h4>
-        
+
         <h6>harshithar799@gmail.com</h6>
         <h6>manojkumar333619@gmail.com</h6>
         <h6>sunkeerthmuppala@gmail.com</h6>
     </div>
-        
+
 
     <br><br>
  <div class="container-fluid text-center bg-dark fixed-bottom text-light p-3">
 
 
-          Made with <span styke="color:red">&hearts;</span> by
+        
 
 
         <kbd> TEAM 12</kbd>
@@ -181,5 +181,3 @@
 
 
 </html>
-
-
