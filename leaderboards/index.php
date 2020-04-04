@@ -94,7 +94,7 @@
 
            </thead>
 
-<?php foreach($row as $u){?>
+<?php foreach($user as $u){?>
 
            <tr>
 
