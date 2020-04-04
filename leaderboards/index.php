@@ -23,7 +23,7 @@
 
         $rank[] = 1440-$row['rank'];
 
-        $user = $row;
+        $user[] = $row;
       //  $user[] = $row['user_name'];
 
     }
