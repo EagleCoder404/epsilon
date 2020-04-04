@@ -118,7 +118,7 @@ if(!isset($_SESSION['user_name']))
 					success: function(res) {
 						res = res.trim();
 						if(res == 'gg') {
-							$('#main').html("<div class='jumbotron display-1'>You've got em all ash!'</div>");
+							$('#main').html("<div class='jumbotron display-1'>Keep an eye out for new questions</div>");
 							return;
 						}
 						console.log(res);
