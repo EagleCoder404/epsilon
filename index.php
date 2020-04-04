@@ -109,11 +109,10 @@
 
 
             <li>Each correct answer, will earn you 1 point.</li>
-            <li>The first individual with highest points at the end of the 4th April 11:59PM wins the contest.</li>
+            <li>The first individual with highest points at the end of the 6th April 12PM wins the contest.</li>
             <li>Questions might be added based on the requirement.</li>
             <li>Organisers decision is final.</li>
             <li>Please use your official name while registering to claim the goodies in case you win. </li>
-          
             <li>The questions range over the theme of the fest. Few questions might tickle your brain, but do not give up!</li> 
                             
 
