@@ -88,6 +88,7 @@
 
                     <th>User</th>
 
+                    <th>Points</th>
                 </tr>
 
            </thead>
