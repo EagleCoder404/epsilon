@@ -23,11 +23,11 @@
 
         $rank[] = 1440-$row['rank'];
 
-        $user[] = $row['user_name'];
+      //  $user[] = $row['user_name'];
 
     }
 
-    array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_DESC,SORT_NUMERIC,$user);
+    array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_DESC,SORT_NUMERIC,$row);
 
     $i=1;
 
@@ -92,13 +92,15 @@
 
            </thead>
 
-<?php foreach($user as $u){?>
+<?php foreach($row as $u){?>
 
            <tr>
 
                <td><?= $i ?></td>
 
-               <td><?= $u ?></td>
+               <td><?= $u['user_name'] ?></td>
+
+               <td><?= $u['points']?></td>
 
            </tr>
 
