@@ -21,14 +21,14 @@
 
         $points[] =$row['points'];
 
-        $rank[] = 1440-$row['rank'];
+        $rank[] = $row['rank'];
 
         $user[] = $row;
       //  $user[] = $row['user_name'];
 
     }
 
-    array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_DESC,SORT_NUMERIC,$user);
+    array_multisort($points,SORT_DESC,SORT_NUMERIC,$rank,SORT_ASC,SORT_NUMERIC,$user);
 
     $i=1;
 
