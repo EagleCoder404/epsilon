@@ -19,16 +19,16 @@ date_default_timezone_set('Asia/Kolkata');
         $cur =strtotime($cur);
         $prev = new DateTime("@$prev");
         $cur = new DateTime("@$cur");
-                $d = date_diff($cur,$prev);
-        $diff=$d->format('%i');
-        
+                // $d = date_diff($cur,$prev);
+        // $diff=$d->format('%i');
+        $diff = $cur->getTimestamp() - $prev->getTimestamp();
         $con->query("update user set points=points+1,rank=rank+'$diff' where user_name='$user'");
         echo $con->error;
-        
+
 
 
         echo "yes";
-  
+
 
     }
     else
