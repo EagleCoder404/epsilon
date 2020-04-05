@@ -114,7 +114,7 @@
             <li>Organisers decision is final.</li>
             <li>Please use your official name while registering to claim the goodies in case you win. </li>
             <li>The questions range over the theme of the fest. Few questions might tickle your brain, but do not give up!</li>
-
+            <li>tryme</li>
 
                  </ul>
 
