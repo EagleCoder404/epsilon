@@ -167,10 +167,7 @@
 
     <br><br>
  <div class="container-fluid text-center bg-dark fixed-bottom text-light p-3">
-
-
-        
-
+   From
 
         <kbd> TEAM 12</kbd>
 
