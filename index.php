@@ -140,13 +140,7 @@
         <!--get started-->
 
 
-      <div class="container text-center">
-
-
-         <a class='btn btn-primary btn-lg' href='/quiz/'>get started</a>
-
-
-      </div>
+     
 
 <br><br>
 
