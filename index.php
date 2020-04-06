@@ -55,7 +55,8 @@
 
 
           <h3>The online treasure hunt</h3>
-
+          <br>
+        <h4>Stay tuned for further updates</h4>
 
           <br>
 
@@ -132,10 +133,6 @@
 
 
 
-
-<div class="text-center">
-  <h3>Stay Tuned for Answers</h3>
-        </div>
 
 
 
